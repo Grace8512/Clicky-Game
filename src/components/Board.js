@@ -9,20 +9,18 @@ import Picture from './Picture';
 
 const Board = () => {
     const images = [
-        {id:0, src: "assets/images/dog1.jpeg"},
-        {id:1, src: "assets/images/dog2.jpeg"},
-        {id:2, src: "assets/images/dog3.jpeg"},
-        {id:3, src: "assets/images/dog4.jpg"},
-        {id:4, src: "assets/images/dog5.jpeg"},
-        {id:5, src: "assets/images/dog6.jpg"},
-        {id:6, src: "assets/images/dog7.jpg"},
-        {id:7, src: "assets/images/dog8.jpg"},
-        {id:8, src: "assets/images/dog9.jpg"},
-        {id:9, src: "assets/images/dog10.jpg"},
-        {id:10, src: "assets/images/dog11.jpg"},
-        {id:11, src: "assets/images/dog12.jpg"},
-        {id:12, src: "assets/images/dog13.jpg"},
-        {id:13, src: "assets/images/dog14.jpg"}
+        {id:0, src: "/assets/images/dog1.jpg"},
+        {id:1, src: "/assets/images/dog2.jpg"},
+        {id:2, src: "/assets/images/dog3.jpg"},
+        {id:3, src: "/assets/images/dog4.jpg"},
+        {id:4, src: "/assets/images/dog5.jpg"},
+        {id:5, src: "/assets/images/dog6.jpg"},
+        {id:6, src: "/assets/images/dog7.jpg"},
+        {id:7, src: "/assets/images/dog8.jpg"},
+        {id:8, src: "/assets/images/dog9.jpg"},
+        {id:9, src: "/assets/images/dog10.jpg"},
+        {id:10, src: "/assets/images/dog11.jpg"},
+        {id:11, src: "/assets/images/dog12.jpg"}
     ];
 // state
   // useState(0): [0, (newValue) => {this.state = newValue}];
@@ -98,11 +96,17 @@ const handleOnClick = (id) => {
 
   return (
     <div>
-     <NavBar score={score} highestScore={highestScore} />
-      {cards.map(card => {
-          console.log('card.map'+card);
-          return (<Picture imgSrc={card.src} onClick={handleOnClick} pictureId={card.id} />);
-          })}
+      <NavBar score={score} highestScore={highestScore} />
+      
+      <div className="container page-top">
+        <div className="row">
+        {cards.map(card => {
+              console.log('card.map'+card);
+              return (<Picture key= {card.id} imgSrc={card.src} onClick={handleOnClick} pictureId={card.id} />);
+              })}
+          </div>
+      </div>
+
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import Score from "./Score";
+import './NavBar.css';
 const NavBar = props => (
     <nav>
         <ul>
