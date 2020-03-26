@@ -8,10 +8,15 @@ const NavBar = props => (
                 <a href="/">Clicky Game</a>
             </li>
             <li>
+                <p>{props.message}</p> 
+            </li>
+            <li>
                 <Score text="score" score={props.score} /> | <Score text="highest score" score={props.highestScore} /> 
             </li>
         </ul>
     </nav>
 );
+
+
 
 export default NavBar;

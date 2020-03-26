@@ -29,11 +29,12 @@ const Board = () => {
   // const useStateReturn = useState(0);
   // const score = useStateReturn[0];
   // const setScore = useStateReturn[1];
-
+//앞이 var이름 뒤는 이 베리어블을 업데이트 할 때 사용하는 펑션이름
   const [score, setScore] = React.useState(0);
   const [highestScore, setHighestScore] = React.useState(0);
   const [cards, setCards] = React.useState(Array.from(images));
   const [clicked, setClicked] = React.useState([]);
+  const [message, setMessage] = React.useState("Click an image to begin!");
 
   const checkIfScore = (id) => {
     const isScore = !clicked.includes(id);
@@ -85,6 +86,11 @@ const handleOnClick = (id) => {
    
     // check if score
     const isScore = checkIfScore(id);
+    if(isScore){
+      setMessage("You guessed correctly!");
+    }else{
+      setMessage("You guessed incorrectly!");
+    }
     // update score & highest score
     if (isScore && highestScore < score + 1) {
       setHighestScore(score + 1);
@@ -92,19 +98,22 @@ const handleOnClick = (id) => {
     setScore(isScore ? score + 1 : 1);
    
     shuffle();
-  };
+  };  
+
 
   return (
     <div>
-      <NavBar score={score} highestScore={highestScore} />
+      <NavBar message={message} score={score} highestScore={highestScore} />
       
       <div className="container page-top">
         <div className="row">
         {cards.map(card => {
               console.log('card.map'+card);
-              return (<Picture key= {card.id} imgSrc={card.src} onClick={handleOnClick} pictureId={card.id} />);
+              return (
+                <Picture key= {card.id} imgSrc={card.src} onClick={handleOnClick} pictureId={card.id} />
+                );
               })}
-          </div>
+        </div>
       </div>
 
     </div>
