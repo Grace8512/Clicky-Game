@@ -8,7 +8,7 @@ This Clicky app is a memory game with React and the application's UI into compon
 
 - Click any image on the page user can check their score.
 - To get points pick a different picture every single click. 
-- If you click the same picture the points reset, your top score is always saved.  
+- If user click the same picture the points reset, user's top score is always saved.  
 
 ## Technologies 
 
