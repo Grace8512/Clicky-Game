@@ -16,4 +16,4 @@ This Clicky app is a memory game with React and the application's UI into compon
 - JSX
 - Bootstrap
 
-[still working on Hiroku deploy](https://salty-reef-66623.herokuapp.com)
+[Try Clicky Game!](https://grace8512.github.io/Clicky-Game/)
