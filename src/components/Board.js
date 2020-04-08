@@ -9,18 +9,18 @@ import Picture from './Picture';
 
 const Board = () => {
     const images = [
-        {id:0, src: "/assets/images/dog1.jpg"},
-        {id:1, src: "/assets/images/dog2.jpg"},
-        {id:2, src: "/assets/images/dog3.jpg"},
-        {id:3, src: "/assets/images/dog4.jpg"},
-        {id:4, src: "/assets/images/dog5.jpg"},
-        {id:5, src: "/assets/images/dog6.jpg"},
-        {id:6, src: "/assets/images/dog7.jpg"},
-        {id:7, src: "/assets/images/dog8.jpg"},
-        {id:8, src: "/assets/images/dog9.jpg"},
-        {id:9, src: "/assets/images/dog10.jpg"},
-        {id:10, src: "/assets/images/dog11.jpg"},
-        {id:11, src: "/assets/images/dog12.jpg"}
+        {id:0, src: "./assets/images/dog1.jpg"},
+        {id:1, src: "./assets/images/dog2.jpg"},
+        {id:2, src: "./assets/images/dog3.jpg"},
+        {id:3, src: "./assets/images/dog4.jpg"},
+        {id:4, src: "./assets/images/dog5.jpg"},
+        {id:5, src: "./assets/images/dog6.jpg"},
+        {id:6, src: "./assets/images/dog7.jpg"},
+        {id:7, src: "./assets/images/dog8.jpg"},
+        {id:8, src: "./assets/images/dog9.jpg"},
+        {id:9, src: "./assets/images/dog10.jpg"},
+        {id:10, src: "./assets/images/dog11.jpg"},
+        {id:11, src: "./assets/images/dog12.jpg"}
     ];
 // state
   // useState(0): [0, (newValue) => {this.state = newValue}];
