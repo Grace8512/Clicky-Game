@@ -20,4 +20,4 @@ This Clicky app is a memory game with React and the application's UI into compon
 - Bootstrap
 - CSS
 
-[Try Clicky Game!](https://grace8512.github.io/Clicky-Game/)
+Heroku Deploy: [Try Clicky Game!](https://grace8512.github.io/Clicky-Game/)
