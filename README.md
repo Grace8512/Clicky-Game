@@ -4,6 +4,8 @@
 
 This Clicky app is a memory game with React and the application's UI into components, manage component state, and respond to user events.
 
+![ClickyGame](assets/images/clicky_game.png)
+
 ## Instructions
 
 - Click any image on the page user can check their score.
