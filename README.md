@@ -16,6 +16,8 @@ This Clicky app is a memory game with React and the application's UI into compon
 
 - React
 - JSX
+- ES6
 - Bootstrap
+- CSS
 
 [Try Clicky Game!](https://grace8512.github.io/Clicky-Game/)
